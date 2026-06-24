@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Problem Solving เด็กเครียดแต่ไม่พูด</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- TailwindCSS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <style type="text/tailwindcss">
+    @theme {
+      --font-sans: "Noto Sans Thai", sans-serif;
+    }
+  </style>
+
+</head>
+
+<body class="bg-gradient-to-br from-sky-100 to-indigo-200 text-gray-800 scroll-smooth font-sans!">
+
+<!-- NAV -->
+<nav class="fixed top-0 w-full bg-white/70 backdrop-blur shadow-md flex justify-center gap-6 py-3 z-50">
+  <a href="#intro" class="hover:text-blue-600 font-semibold">บทนำ</a>
+  <a href="#problem" class="hover:text-blue-600 font-semibold">ปัญหา</a>
+  <a href="#solution" class="hover:text-blue-600 font-semibold">วิธีแก้</a>
+  <a href="#interactive" class="hover:text-blue-600 font-semibold">Interactive</a>
+</nav>
+
+<!-- HERO -->
+<header class="h-screen flex flex-col justify-center items-center text-center text-white relative">
+  <div class="absolute inset-0 bg-black/60"></div>
+
+  <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38"
+       class="absolute inset-0 w-full h-full object-cover -z-10"/>
+
+  <h1 class="text-3xl md:text-5xl font-bold z-10 px-4">
+    การแก้ปัญหาเด็กที่มีความเครียดสะสมแต่ไม่ยอมพูด
+  </h1>
+  <p class="mt-4 text-lg z-10">
+    ด้วยกระบวนการ Problem Solving อย่างเป็นระบบ
+  </p>
+</header>
+
+<!-- INTRO -->
+<section id="intro" class="max-w-5xl mx-auto p-6 mt-10">
+  <h2 class="text-2xl font-bold mb-4">📌 บทนำ</h2>
+  <div class="bg-white p-5 rounded-2xl shadow hover:shadow-lg transition">
+    เด็กบางคนไม่แสดงความเครียดออกมาโดยการพูด แต่แสดงออกผ่านพฤติกรรม เช่น เงียบ หงุดหงิด หรือหลีกเลี่ยงสังคม
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section id="problem" class="max-w-5xl mx-auto p-6">
+  <h2 class="text-2xl font-bold mb-4">⚠️ ปัญหาที่พบ</h2>
+  <div class="bg-white p-5 rounded-2xl shadow space-y-2">
+    <p>• เด็กไม่สื่อสารความรู้สึก</p>
+    <p>• ผู้ปกครองไม่เข้าใจสัญญาณความเครียด</p>
+    <p>• ความเครียดสะสมส่งผลต่อพฤติกรรม</p>
+  </div>
+</section>
+
+<!-- SOLUTION -->
+<section id="solution" class="max-w-5xl mx-auto p-6">
+  <h2 class="text-2xl font-bold mb-4">💡 วิธีแก้แบบ Problem Solving</h2>
+
+  <div class="grid gap-4">
+
+    <div class="bg-white p-5 rounded-2xl shadow">
+      <b>1. ระบุปัญหา</b>
+      <p>สังเกตพฤติกรรมแทนคำพูด</p>
+    </div>
+
+    <div class="bg-white p-5 rounded-2xl shadow">
+      <b>2. วิเคราะห์สาเหตุ</b>
+      <p>สิ่งแวดล้อม ครอบครัว โรงเรียน เพื่อน</p>
+    </div>
+
+    <div class="bg-white p-5 rounded-2xl shadow">
+      <b>3. สร้างทางเลือก</b>
+      <p>ศิลปะ การเล่น หรือการเขียนแทนการพูด</p>
+    </div>
+
+    <div class="bg-white p-5 rounded-2xl shadow">
+      <b>4. ลงมือแก้ไข</b>
+      <p>เลือกวิธีที่เหมาะกับเด็กแต่ละคน</p>
+    </div>
+
+    <div class="bg-white p-5 rounded-2xl shadow">
+      <b>5. ประเมินผล</b>
+      <p>ติดตามพฤติกรรมอย่างต่อเนื่อง</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- INTERACTIVE -->
+<section id="interactive" class="max-w-5xl mx-auto p-6 mb-20">
+  <h2 class="text-2xl font-bold mb-4">🎯 Interactive</h2>
+
+  <!-- Q1 -->
+  <div class="bg-white p-5 rounded-2xl shadow mb-5">
+    <p class="font-semibold mb-3">เด็กไม่พูดและแยกตัวจากเพื่อน ควรทำอย่างไร?</p>
+
+    <div class="flex gap-3 flex-wrap">
+      <button onclick="show('a1')" class="px-4 py-2 bg-red-500 text-white rounded-xl hover:bg-red-600">
+        ปล่อยให้อยู่คนเดียว
+      </button>
+
+      <button onclick="show('a2')" class="px-4 py-2 bg-green-500 text-white rounded-xl hover:bg-green-600">
+        สังเกตและค่อย ๆ พูดคุย
+      </button>
+    </div>
+
+    <p id="a1" class="hidden mt-3 text-red-600">❌ อาจทำให้ความเครียดสะสมมากขึ้น</p>
+    <p id="a2" class="hidden mt-3 text-green-600">✅ เป็นวิธีที่เหมาะสม ช่วยให้เด็กรู้สึกปลอดภัย</p>
+  </div>
+
+  <!-- Q2 -->
+  <div class="bg-white p-5 rounded-2xl shadow">
+    <p class="font-semibold mb-3">เด็กวาดรูปเศร้าซ้ำ ๆ ควรทำอย่างไร?</p>
+
+    <div class="flex gap-3 flex-wrap">
+      <button onclick="show('b1')" class="px-4 py-2 bg-red-500 text-white rounded-xl hover:bg-red-600">
+        ถามตรง ๆ
+      </button>
+
+      <button onclick="show('b2')" class="px-4 py-2 bg-green-500 text-white rounded-xl hover:bg-green-600">
+        ชวนคุยผ่านกิจกรรม
+      </button>
+    </div>
+
+    <p id="b1" class="hidden mt-3 text-red-600">⚠️ อาจทำให้เด็กกดดัน</p>
+    <p id="b2" class="hidden mt-3 text-green-600">✅ ช่วยให้เด็กเปิดใจง่ายขึ้น</p>
+  </div>
+</section>
+
+<footer class="text-center p-6 bg-gray-900 text-white">
+  © 2026 Problem Solving Website
+</footer>
+
+<script>
+function show(id){
+  document.getElementById(id).style.display = "block";
+}
+</script>
+
+</body>
+</html>
